@@ -1,0 +1,627 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+			1. Addition Of Two Numbers
+
+public class Addition{
+    public static void main(String[] args){
+        int n1 = 10 , n2 = 20;
+        System.out.print("Enter two numbers : ");
+        System.out.println(n1 + " " + n2);
+        int sum = n1 + n2;
+        System.out.println("sum is : " + sum );
+    }
+}
+
+
+//OUTPUT
+Enter two numbers : 10 20
+sum is : 30
+
+
+
+			2.Print Integer 
+
+import java.util.Scanner;
+
+public class PrintingInteger{
+    public static void main(String[] args){
+        Scanner integer = new Scanner(System.in);
+        System.out.print("Enter the num: ");
+        int num = integer.nextInt();
+        System.out.println("Number is : " + num);
+        
+    }
+}
+
+//OUTPUT
+Enter the num: 20
+Number is : 20
+
+
+			3.Multiplication
+
+import java.util.Scanner;
+
+public class Multiplication{
+    public static void main(String[] args){
+       Scanner reader = new Scanner(System.in);
+       System.out.print("Enter two numbers: ");
+       int num1 = reader.nextInt();
+       int num2 = reader.nextInt();
+       int result = num1 * num2;
+       System.out.println("Result is: " + result);
+        
+    }
+}
+
+//OUTPUT
+Enter two numbers: 10 20
+Result is: 200
+
+
+			4.TypeCasting
+
+import java.util.Scanner;
+
+public class TypeCasting{
+    public static void main(String[] args){
+        byte b = 5;
+        int i = b;  //will accept - automatic type promotion
+        byte c = i; //error: incompatible types: possible lossy conversion from int to byte
+        byte d = (byte)i; //Type casting makes it possible to store compatible types
+        byte x =3;
+        byte y = 4;
+        byte sum = x * y; //Error is thrown because when two bytes are used in a arthmetic operation, the result will be integer
+    }
+}
+
+
+			5.ASCII Value
+
+public class ASCII{
+    public static void main(String[] args){
+        char ch = 'N';
+        int ascii = (int)ch;
+        System.out.println(ascii);
+    }
+} 
+
+//OUTPUT 
+78
+
+			6.Quotient & Remainder
+
+import java.util.Scanner;
+public class QuotientRemainder{
+    public static void main(String[] args){
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Enter num:");
+        int dividend = reader.nextInt();
+        System.out.println("Dividend is: "+ dividend);
+        System.out.println("Enter num:");
+        int divisor = reader.nextInt();
+        System.out.println("Divisor is: " + divisor);
+        int Quotient = dividend / divisor;
+        int Remainder = dividend % divisor;
+        System.out.println("Quotient is: " + Quotient);
+        System.out.println("Remainder is: " + Remainder);
+    }
+}
+
+//OUTPUT
+Enter num:
+10
+Dividend is: 10
+Enter num:
+5
+Divisor is: 5
+Quotient is: 2
+Remainder is: 0
+                    Odd / Even 
+
+import java.util.Scanner;
+public class OddEven{
+    public static void main(String[] args){
+        Scanner reader = new Scanner(System.in);
+         System.out.print("Enter num :" );
+        int num = reader.nextInt();
+        
+        if(num % 2 == 0){
+            System.out.println("Even");
+        }else{
+            System.out.println("Odd");
+        }
+    }
+} 
+
+//OUTPUT
+Enter num :10
+Even
+
+		7. Vowel Or Not
+
+import java.util.Scanner;
+public class VowelCheck{
+    public static void main(String[] args){
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter character :" );
+        char ch = reader.next().charAt(0);
+        
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ){
+            System.out.println(ch + "is vowel");
+        }else{
+            System.out.println(ch + " is not vowel");
+        }
+    }
+}
+
+//OUTPUT
+Enter character :n
+n is not vowel
+
+		8.LargestNumber
+
+import java.util.Scanner;
+public class LargestNumber{
+    public static void main(String[] args){
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter Number1 :" );
+        double d1 = reader.nextDouble();
+        System.out.print("Enter Number2 :" );
+        double d2 = reader.nextDouble(); 
+        System.out.print("Enter Number3 :" );
+        double d3 = reader.nextDouble();
+        if(d1 >= d2 && d1>= d3){
+            System.out.println("d1 is the LargestNumber");
+        }else if(d2>=d1 && d2 >= d3){
+            System.out.println("d2 is the LargestNumber");
+        }else{
+            System.out.println("d3 is the LargestNumber");
+        }
+        
+       
+    }
+}
+
+//OUTPUT
+Enter Number1 :-5.5
+Enter Number2 :4.6
+Enter Number3 :5.0
+d3 is the LargestNumber
+
+		9.Swapping Of Two Numbers
+
+public class Swapping{
+    public static void main(String[] args){
+        int n1 = 5, n2 = 6;
+        System.out.println("Before Swap:");
+        System.out.println(n1 + " " + n2);
+        int temp = n1;
+        n1 = n2;
+        n2 = temp;
+        System.out.println("After Swap:");
+        System.out.println("First Number : " + n1);
+        System.out.println("Second Number : " + n2);
+    }
+}
+
+//OUTPUT
+Before Swap:
+5 6
+After Swap:
+First Number : 6
+Second Number : 5
+
+		10.Checking Odd/Even
+
+import java.util.Scanner;
+public class ODDEVEN{
+    public static void main(String[] args){
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Enter the Num: ");
+        int num = reader.nextInt();
+        if(num % 2 == 0){
+            System.out.println("Even Number");
+        }else{
+            System.out.println("Odd Number");
+        }
+    }   
+}
+
+//OUTPUT
+Enter the Num: 
+12
+Even Number
+
+		11.Nested For Loop
+
+public class NestedForLoop{
+    public static void main(String[] args){
+        for(int i =0; i<=2;i++){
+            for(int j=1; j<=3;j++){
+                System.out.println(i + " " + j);
+            }
+        }
+    }   
+}
+
+//OUTPUT
+0 1
+0 2
+0 3
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+
+		12.Pyramid Examples
+
+public class PyramidExample{
+    public static void main(String[] args){
+        for(int i=1; i<=5; i++){
+            for(int j=1; j<=i ; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+     
+    }    
+} 
+
+//OUTPUT
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+		PyramidReverse 
+
+public class PyramidExampleReverse{
+    public static void main(String[] args){
+       for(int i =1; i<=5 ; i++){
+           for(int j=5 ; j>=i; j--){
+               System.out.print("* ");
+           }
+           System.out.println();
+       }
+    }
+}  
+
+//OUTPUT
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+		Floyd Triangle 
+
+import java.util.Scanner; 
+public class FloydsTriangle{ 
+  public static void main(String args[]){
+      int term , i, j , num =1;
+      System.out.print("Enter the term:");
+      Scanner reader = new Scanner(System.in);
+      term = reader.nextInt();
+      for(i =1; i<=term ; i++){
+          for(j = 1 ; j<=i ; j++){
+              System.out.print(num + " ");
+              num++;
+            }
+            System.out.println();
+      }
+  }
+} 
+
+//OUTPUT
+Enter the term: 4
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+
+		13.While Loop
+
+import java.util.Scanner; 
+ 
+public class WhileLoopDemo { 
+ public static void main(String[] args) { 
+    int num , sum =0; 
+    System.out.print("Enter the num below 8 : ");
+    Scanner reader = new Scanner(System.in);
+    num = reader.nextInt();
+    while(num<=8){
+        sum = sum + num;
+        num++;
+    }
+    System.out.println("Sum is: " + sum);
+ }
+}
+
+//OUTPUT
+Enter the num below 8 : 4
+Sum is: 30
+
+		14.DoWhile Loop
+
+public class DoWhileLoopDemo { 
+ public static void main(String[] args) { 
+    int num =0;
+    do{
+        System.out.println("Num is: " + num);
+        num++;
+    }while(num<10);
+ }    
+} 
+      
+//OUTPUT
+Num is: 0
+Num is: 1
+Num is: 2
+Num is: 3
+Num is: 4
+Num is: 5
+Num is: 6
+Num is: 7
+Num is: 8
+Num is: 9
+
+		15.SwitchCase
+
+ 
+public class SwitchCase { 
+ public static void main(String args[]){ 
+    String day = "Sunday";
+    switch(day){
+        case("Monday"):
+        {
+            System.out.println("weekday");
+            break;
+        }
+        case("Sunday"):
+        {
+            System.out.println("weekend");
+            break;
+        }
+        default:
+        {
+            System.out.println("invalid data");
+        }
+    }
+ }
+}
+    
+
+//OUTPUT
+weekend
+
+		16.Nested Switchcase
+
+public class NestedSwitchCase { 
+ public static void main(String args[]){ 
+    int standard = 2;
+    int degree = 2;
+    switch(standard){
+        case 1: 
+            System.out.println("10 th ");
+            break;
+            
+        case 2:
+            switch(degree){
+                case 1: 
+                    System.out.println("Arts & Science");
+                    break;
+                    
+                case 2:
+                    System.out.println("Engineering");
+            } 
+    }
+ }
+}
+
+//OUTPUT
+Engineering
+
+		17.Area Of Rectangle
+
+import java.util.Scanner;
+public class AreaOfRectangle{
+    public static void main(String[] args){
+        int length , breadth, area;
+        System.out.print("Enter length = ");
+        Scanner reader = new Scanner(System.in);
+        length  = reader.nextInt();
+        System.out.print("Enter breadth = ");
+        breadth = reader.nextInt();
+        area = length * breadth;
+        System.out.println("Area is : "+ area);
+    }
+} 
+
+//OUTPUT
+Enter length = 3
+Enter breadth = 4
+Area is : 12
+
+		18.Area Of Square
+
+import java.util.Scanner;
+public class AreaOfSquare{
+    public static void main(String[] args){
+        double side, area;
+        System.out.print("Enter side = ");
+        Scanner reader = new Scanner(System.in);
+        side  = reader.nextDouble();
+        area = side * side;
+        System.out.println("Area is : "+ area);
+    }
+} 
+
+//OUTPUT
+Enter side = 2.0
+Area is : 4.0
+
+		19.Area of Triangle
+
+import java.util.Scanner;
+public class AreaOfTriangle{
+    public static void main(String[] args){
+        float base,height, area;
+        System.out.print("Enter base = ");
+        Scanner reader = new Scanner(System.in);
+        base  = reader.nextFloat();
+        System.out.print("Enter base = ");
+        height = reader.nextFloat();
+        area = (base * height) / 2;
+        System.out.println("Area is : "+ area);
+    }
+} 
+
+//OUTPUT
+Enter base = 2.0
+Enter base = 3.0
+Area is : 3.0
+
+		20.Area / Circumference Of Circle
+
+import java.util.Scanner;
+
+public class AreaOfCircle{
+    public static void main(String[] args){
+        double radius,circumference,area;
+        System.out.print("Enter radius = ");
+        Scanner reader = new Scanner(System.in);
+        radius  = reader.nextDouble();
+        area = Math.PI *(radius * radius);
+        System.out.println("Area is : "+ area);
+        circumference =  Math.PI * 2 * radius;
+        System.out.println("circumference is : "+ circumference);
+    }
+} 
+
+//OUTPUT
+Enter radius = 2.0
+Area is : 12.566370614359172
+circumference is : 12.566370614359172
+
+		21.Reversing A Number 
+
+import java.util.Scanner;
+public class ReverseNumber{
+    public static void main(String[] args){
+        int num, reverse=0; //1234
+        System.out.print("Enter Num: ");
+        Scanner reader = new Scanner(System.in);
+        num = reader.nextInt();
+        while(num!=0){
+            int digit = num  % 10; // 1234 % 10   
+            reverse = reverse * 10 + digit; //4 
+            num /= 10;
+        }
+        System.out.println("ReverseNumber is : " + reverse);
+    }
+}   
+
+//OUTPUT
+Enter Num: 1234
+ReverseNumber is : 4321
+
+		22.Prime Number Or Not
+
+import java.util.Scanner;
+public class Prime
+{
+	public static void main(String[] args) {
+		System.out.print("Enter the Number : ");
+		Scanner in = new Scanner(System.in);
+		int num = in.nextInt();
+		boolean prime = true;
+		for(int i = 2 ; i<num ; i++){
+		    if(num % i == 0){
+		        prime = false;
+		        break;
+		    }
+		}
+		if(prime){
+		    System.out.println("is a Prime number");
+		}else{
+		    System.out.println("is not a Prime number");
+		}
+	}
+}
+
+//OUTPUT
+Enter the Number : 49
+is not a Prime number
+
+		23.All Prime Numbers from 1 to 100
+
+public class AllPrimeNumbers
+{
+	public static void main(String[] args) {
+	    int i,j;
+	    for( i =2; i<100; i++){
+	        for(j = 2 ; j<i; j++){
+	            if(i % j == 0){
+	                break;
+	            }
+	        }
+	        if(i==j){
+	            System.out.println(i + " ");
+	        }
+	    }
+	}
+}	
+
+//OUTPUT
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+
+
+		24.SumOfArrayElements
+
+public class SumOfArrayElements{
+    public static void main(String[] args){
+        int[] arr = { 1,2,3,4,5};
+        int sum = 0;
+        for(int i : arr){
+            sum = sum + i;
+        }
+        System.out.print("SUM IS : " + sum);
+    }
+}    
+        
+       
+//OUTPUT
+SUM IS : 15
+
+		25.User Input SumOfArrayEEnter array Elements
+import java.util.Scanner;
+public class ArrayInput{
+    public static void main(String[] args){
+        int[] arr = new int[5]; // {1,2,3 ,4 5}
+        int sum = 0;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter array Elements");
+        for(int i = 0; i<5 ; i++){ 
+            arr[i] = in.nextInt();
+        }
+        for(int num : arr){
+            sum = sum + num;
+        }
+        System.out.println("SUM IS : " + sum);
+    }
+}
+
+//OUTPUT
+Enter array Elements
+1 2 3 4 5
+SUM IS : 15
